@@ -7,8 +7,8 @@
 Products info https://www.jkem.com/, and email1, and email2
 4- Interconnect the electrochemistry workstation instruments into an ecosystem with remote computing system
 
-Note: 1- The workflow modules can work with 2 and 3, one of them, or a partial set of 3
-      2- So far, only the CV technique is available as part of developed autonomous and remote steering modules of electrochemical testing with potentiostat.
+Note: 1. The workflow modules can work with 2 and 3, one of them, or a partial set of 3
+      2. So far, only the CV technique is available as part of developed autonomous and remote steering modules of electrochemical testing with potentiostat.
 
 #################################################################################
 #################################################################################
@@ -36,13 +36,13 @@ The workflow includes:
 So far, the analysis modules available in this repo is to check the CV profile normality using machine learning, particularly to examine the profiles if they are "normal" or "invalid" due to the disconnection of an electrode or runing out of solution at the cell.
 
 More details about the cross-facility electrochemistry workflow and ML for electrochemistry workflow are available at:
-1- A. Al-Najjar, N. S. V. Rao,  C. Bridges and S. Dai, "Cross-Facility Orchestration of Electrochemistry Experiments and Computations", In 2023 5th Annual Workshop on Extreme-scale Experiment-in-the-Loop Computing (XLOOP), Denver, CO, USA, 2023.
-2- A. Al-Najjar, N. S. V. Rao, C. Bridges, S. Deng, Normality of I-V measurements using ML, IEEE International Conference eScience, 2-pager and poster, October 9-13, Limassol, Cyprus.
+1. A. Al-Najjar, N. S. V. Rao,  C. Bridges and S. Dai, "Cross-Facility Orchestration of Electrochemistry Experiments and Computations", In 2023 5th Annual Workshop on Extreme-scale Experiment-in-the-Loop Computing (XLOOP), Denver, CO, USA, 2023.
+2. A. Al-Najjar, N. S. V. Rao, C. Bridges, S. Deng, Normality of I-V measurements using ML, IEEE International Conference eScience, 2-pager and poster, October 9-13, Limassol, Cyprus.
 
 #################################################################################
 #################################################################################
 
-# To create a virtual environment on (client/server) system
+# To create a virtual environment on (client(c)/server(s)) system
 conda create -y --name acl_venv_<c|s> python=3.9
 conda install --force-reinstall -y -q --name acl_venv_<c|s> -c conda-forge --file requirements_<win/lnx>.txt
 
@@ -50,9 +50,8 @@ conda activate acl_venv_<c|s>
 #.....
 conda deactivate
 
-Note: 1- requirements_win.txt is for the client and server if both are Windows-based.
-
-      2- requirements_lnx.txt if the client is Linux-based
+Note: 1. requirements_win.txt is for the client and server if both are Windows-based systems.
+      2. requirements_lnx.txt if the client is a Linux-based system.
 
 # To access jupyter-notebook on the client (Linux (e.g., dgx system))
 ### on Linux (dgx system)
@@ -64,7 +63,7 @@ jupyter notebook --no-browser --port=8080
 ssh -L 8080:localhost:8080 <user>@phoenix
 
 ### on client system web browser
-http://localhost:8080/tree?token=<token>
+http://localhost:8080/tree?token=/<token/>
 
 #################################################################################
 #################################################################################
