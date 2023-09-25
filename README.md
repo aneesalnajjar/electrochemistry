@@ -17,7 +17,7 @@ Note:
 # Electrochemistry Cross facility testing Ecosystem.
  
 The Ecosystem consists of an electrochemistry workstation connected to a control agent computer at science facility, which is interconnected to a remote (high-performance) computing system available at a different facility.
-The electrochemistry workstation includes bio-logic SP200 potentiostat to control an electrochemical cell, and a J-Kem custom setup of MFC, Fraction collector, Syringe and peristaltic pumps, temperature controller and monitor, polyScience chiller, pH probe, and Electrode Module. The setup is connected via serial ports to the J-Kem single-board computer that runs (back-end) vendor control firmware.
+The electrochemistry workstation includes Bio-Logic SP200 potentiostat to control an electrochemical cell, and a J-Kem custom setup of MFC, Fraction collector, Syringe and peristaltic pumps, temperature controller and monitor, polyScience chiller, pH probe, and Electrode Module. The setup is connected via serial ports to the J-Kem single-board computer that runs (back-end) vendor control firmware.
 The electrochemical cell is fed with a solution and gas via the J-Kem setup to run Cyclic Voltammetry (CV) test. 
 The potentiostat and J-Kem single-board computer are controlled via developed Python APIs embedded in the control agent.
 The Python-based APIs at the control agent are wrapped as Pyro server objects to be remotely called across the ecosystem network from the remote computing system to enable cross-facility autonomous instruments steering, and measurement transfer and analysis.
