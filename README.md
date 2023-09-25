@@ -7,6 +7,7 @@ We utilized the developed interfaces to develop an [electrochemistry workflow](h
 
 More details about the cross-facility electrochemistry workflow and ML for electrochemistry workflow are available at:
 **1. A. Al-Najjar, N. S. V. Rao,  C. Bridges and S. Dai, "Cross-Facility Orchestration of Electrochemistry Experiments and Computations", In 2023 5th Annual Workshop on Extreme-scale Experiment-in-the-Loop Computing (XLOOP), Denver, CO, USA, 2023.**
+
 **2. A. Al-Najjar, N. S. V. Rao, C. Bridges, S. Deng, Normality of I-V measurements using ML, IEEE International Conference eScience, 2-pager and poster, October 9-13, Limassol, Cyprus.**
 
 ## Developer:
