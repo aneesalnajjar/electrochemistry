@@ -7,7 +7,7 @@ We utilized the developed interfaces to develop an [electrochemistry workflow](h
 
 More details about the cross-facility electrochemistry workflow and ML for electrochemistry workflow are available at:
 
-  **1. A. Al-Najjar, N. S. V. Rao,  C. Bridges and S. Dai, "Cross-Facility Orchestration of Electrochemistry Experiments and Computations", In 2023 5th Annual Workshop on Extreme-scale Experiment-in-the-Loop Computing (XLOOP), Denver, CO, USA, 2023.**
+  **1. A. Al-Najjar, N. S. V. Rao,  C. Bridges, and S. Dai, "Cross-Facility Orchestration of Electrochemistry Experiments and Computations", In 2023 5th Annual Workshop on Extreme-scale Experiment-in-the-Loop Computing (XLOOP), Denver, CO, USA, 2023.**
 
   **2. A. Al-Najjar, N. S. V. Rao, C. Bridges, S. Deng, Normality of I-V measurements using ML, IEEE International Conference eScience, October 9-13, Limassol, Cyprus.**
 
@@ -36,7 +36,7 @@ Note:
 
 # Electrochemistry Cross facility testing Ecosystem.
  
-The Ecosystem consists of an electrochemistry workstation connected to a control agent computer at science facility, which is interconnected to a remote (high-performance) computing system available at a different facility.
+The Ecosystem consists of an electrochemistry workstation connected to a control agent computer at a science facility, which is interconnected to a remote (high-performance) computing system available at a different facility.
 The electrochemistry workstation includes Bio-Logic SP200 potentiostat to control an electrochemical cell, and a J-Kem custom setup of MFC, Fraction collector, Syringe and peristaltic pumps, temperature controller and monitor, polyScience chiller, pH probe, and Electrode Module. The setup is connected via serial ports to the J-Kem single-board computer that runs (back-end) vendor control firmware.
 The electrochemical cell is fed with a solution and gas via the J-Kem setup to run Cyclic Voltammetry (CV) test. 
 The potentiostat and J-Kem single-board computer are controlled via developed Python APIs embedded in the control agent.
@@ -54,7 +54,7 @@ The workflow includes:
   * Collecting measurements at the control agent.
   * Making them available at the remote system for analysis. Different methods are used for streaming measurements, including via control channel over Pyro, or via a dedicated data channel, such as MS One Drive or a file-sharing technique.
 
-So far, the analysis modules available in this repo are to check the CV profile normality using machine learning, particularly to examine the profiles if they are "normal" or "invalid" due to the disconnection of an electrode or running out of solution at the cell.
+So far, the analysis modules available in this repo are to check the CV profile normality using machine learning, particularly to examine whether the profiles are "normal" or "invalid" due to the disconnection of an electrode or running out of solution at the cell.
 #################################################################################
 #################################################################################
 
