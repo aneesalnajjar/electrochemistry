@@ -7,7 +7,7 @@ Products info https://www.jkem.com/, and email1, and email2
 4- Interconnect the electrochemistry workstation instruments into an ecosystem with remote computing system
 
 Note: 1- The workflow modules can work with 2 and 3, one of them, or a partial set of 3
-	  2- So far, only the CV technique is available as part of developed autonomous and remote steering modules of electrochemical testing with potentiostat.
+      2- So far, only the CV technique is available as part of developed autonomous and remote steering modules of electrochemical testing with potentiostat.
 
 #################################################################################
 #################################################################################
@@ -49,8 +49,8 @@ conda activate acl_venv_<c|s>
 #.....
 conda deactivate
 
-#Note: 1- requirements_win.txt is for client and server if both are Windows based.
-#      2- requirements_lnx.txt if the client is Linux based
+#Note: 1- requirements_win.txt is for the client and server if both are Windows-based.
+#      2- requirements_lnx.txt if the client is Linux-based
 
 #To access jupyter-notebook on the client (Linux (e.g., dgx system))
 # on Linux (dgx system)
