@@ -11,7 +11,7 @@ More details about the cross-facility electrochemistry workflow and ML for elect
 
   **2. A. Al-Najjar, N. S. V. Rao, C. Bridges, S. Deng, Normality of I-V measurements using ML, IEEE International Conference eScience, 2-pager and poster, October 9-13, Limassol, Cyprus.**
 
-##Developer: ##
+**Developer:**
 Anees Al-Najjar,
 
 Oak Ridge National Laboratory (ORNL),
