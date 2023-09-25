@@ -5,6 +5,10 @@ This repository contains developed programmable interfaces for autonomously stee
 
 We utilized the developed interfaces to develop an [electrochemistry workflow](https://github.com/aneesalnajjar/electrochemistry/blob/main/README.md#electrochemistry-workflow) to test the normality of CV measurements using machine learning.
 
+More details about the cross-facility electrochemistry workflow and ML for electrochemistry workflow are available at:
+**1. A. Al-Najjar, N. S. V. Rao,  C. Bridges and S. Dai, "Cross-Facility Orchestration of Electrochemistry Experiments and Computations", In 2023 5th Annual Workshop on Extreme-scale Experiment-in-the-Loop Computing (XLOOP), Denver, CO, USA, 2023.**
+**2. A. Al-Najjar, N. S. V. Rao, C. Bridges, S. Deng, Normality of I-V measurements using ML, IEEE International Conference eScience, 2-pager and poster, October 9-13, Limassol, Cyprus.**
+
 ## Developer:
 Anees Al-Najjar,
 
@@ -39,20 +43,15 @@ The Python-based APIs at the control agent are wrapped as Pyro server objects to
 
 Initially, as a manual step, the workflow requires initializing the experimental setup of the instruments, including filling the fraction collector vials with a solution. 
 Then, the workflow modules are run in server/client mode. The server modules are run at the control agent and the client modules are run from the remote computing.
-The server modules are triggered at the control agent to be run in a daemon to expose the Pyro server objects for communication across the network. They are called by Pyro client applications executed and orchestrated as part of autonomus workflow from a Jupyter notebook at the remote computing system.
+The server modules are triggered at the control agent to be run in a daemon to expose the Pyro server objects for communication across the network. They are called by Pyro client applications executed and orchestrated as part of autonomous workflow from a Jupyter notebook at the remote computing system.
 
 The workflow includes:
   * Activating the J-Kem setup to fill the electrochemical cell.
   * Activating potentiostat to run the CV experiment.
   * Collecting measurements at the control agent.
-  * Making them available at the remote system for analysis. Different methods are used for streaming measurements, including via control channel over Pyro, or via a dedicated data channel, such as MS One Drive or a file sharing technique.
+  * Making them available at the remote system for analysis. Different methods are used for streaming measurements, including via control channel over Pyro, or via a dedicated data channel, such as MS One Drive or a file-sharing technique.
 
-So far, the analysis modules available in this repo is to check the CV profile normality using machine learning, particularly to examine the profiles if they are "normal" or "invalid" due to the disconnection of an electrode or runing out of solution at the cell.
-
-More details about the cross-facility electrochemistry workflow and ML for electrochemistry workflow are available at:
-1. A. Al-Najjar, N. S. V. Rao,  C. Bridges and S. Dai, "Cross-Facility Orchestration of Electrochemistry Experiments and Computations", In 2023 5th Annual Workshop on Extreme-scale Experiment-in-the-Loop Computing (XLOOP), Denver, CO, USA, 2023.
-2. A. Al-Najjar, N. S. V. Rao, C. Bridges, S. Deng, Normality of I-V measurements using ML, IEEE International Conference eScience, 2-pager and poster, October 9-13, Limassol, Cyprus.
-
+So far, the analysis modules available in this repo are to check the CV profile normality using machine learning, particularly to examine the profiles if they are "normal" or "invalid" due to the disconnection of an electrode or running out of solution at the cell.
 #################################################################################
 #################################################################################
 
