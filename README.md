@@ -7,7 +7,10 @@ We utilized the developed interfaces to develop an electrochemistry workflow to 
 
 ## Developer:
 Anees Al-Najjar,
-Oak Ridge National Laboratory (ORNL), Oak Ridge, TN, 37830, USA
+
+Oak Ridge National Laboratory (ORNL),
+
+Oak Ridge, TN, 37830, USA
 
 # Prerequitise
 
