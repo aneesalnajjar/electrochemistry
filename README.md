@@ -51,8 +51,9 @@ conda activate acl_venv_<c|s>
 #.....
 conda deactivate
 
-Note: 1. requirements_win.txt is for the client and server if both are Windows-based systems.
-      2. requirements_lnx.txt if the client is a Linux-based system.
+Note:
+1. requirements_win.txt is for the client and server if both are Windows-based systems.
+2. requirements_lnx.txt if the client is a Linux-based system.
 
 # To access jupyter-notebook on the client (Linux (e.g., dgx system))
 ### on Linux (dgx system)
