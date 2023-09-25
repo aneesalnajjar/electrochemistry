@@ -5,7 +5,7 @@ This repository contains developed programmable interfaces for autonomously stee
 
 We utilized the developed interfaces to develop an electrochemistry workflow to test the normality of CV measurements using machine learning.
 
-Developer:
+## Developer:
 Anees Al-Najjar,
 Oak Ridge National Laboratory (ORNL), Oak Ridge, TN, 37830, USA
 
