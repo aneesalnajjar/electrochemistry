@@ -51,18 +51,19 @@ conda activate acl_venv_<c|s>
 conda deactivate
 
 Note: 1- requirements_win.txt is for the client and server if both are Windows-based.
+
       2- requirements_lnx.txt if the client is Linux-based
 
-#To access jupyter-notebook on the client (Linux (e.g., dgx system))
-# on Linux (dgx system)
+# To access jupyter-notebook on the client (Linux (e.g., dgx system))
+### on Linux (dgx system)
 cd /mnt/acl_ecosystem/Workflow_dependencies/
 conda activate acl_env
 jupyter notebook --no-browser --port=8080
 
-# on client system terminal
+### on client system terminal
 ssh -L 8080:localhost:8080 <user>@phoenix
 
-# on client system web browser
+### on client system web browser
 http://localhost:8080/tree?token=<token>
 
 #################################################################################
