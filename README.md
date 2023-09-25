@@ -1,4 +1,4 @@
-Prerequitise
+# Prerequitise
 
 1- Anaconda installed on the remote computing systems and control agent.
 2- EC-Lab Development Package for Bio-Logic SP200 potentiostat firmware installed on C drive of the control agent. Product info https://www.biologic.net/products/sp-200/
@@ -49,8 +49,8 @@ conda activate acl_venv_<c|s>
 #.....
 conda deactivate
 
-#Note: 1- requirements_win.txt is for the client and server if both are Windows-based.
-#      2- requirements_lnx.txt if the client is Linux-based
+Note: 1- requirements_win.txt is for the client and server if both are Windows-based.
+      2- requirements_lnx.txt if the client is Linux-based
 
 #To access jupyter-notebook on the client (Linux (e.g., dgx system))
 # on Linux (dgx system)
