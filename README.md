@@ -1,11 +1,11 @@
 
 # Prerequitise
 
-1- Anaconda installed on the remote computing systems and control agent.
-2- EC-Lab Development Package for Bio-Logic SP200 potentiostat firmware installed on C drive of the control agent. Product info https://www.biologic.net/products/sp-200/
-3- J-Kem single-board (back-end) hardware and firmware connected to the J-Kem setup. J-Kem setup of instruments includes MFC, Fraction collector, Syringe and peristaltic pumps, temperature controller and monitor, polyScience chiller, pH probe, and Electrode Module.
+1. Anaconda installed on the remote computing systems and control agent.
+2. EC-Lab Development Package for Bio-Logic SP200 potentiostat firmware installed on C drive of the control agent. Product info https://www.biologic.net/products/sp-200/
+3. J-Kem single-board (back-end) hardware and firmware connected to the J-Kem setup. J-Kem setup of instruments includes MFC, Fraction collector, Syringe and peristaltic pumps, temperature controller and monitor, polyScience chiller, pH probe, and Electrode Module.
 Products info https://www.jkem.com/, and email1, and email2
-4- Interconnect the electrochemistry workstation instruments into an ecosystem with remote computing system
+4. Interconnect the electrochemistry workstation instruments into an ecosystem with remote computing system
 
 Note: 1. The workflow modules can work with 2 and 3, one of them, or a partial set of 3
       2. So far, only the CV technique is available as part of developed autonomous and remote steering modules of electrochemical testing with potentiostat.
