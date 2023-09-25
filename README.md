@@ -64,7 +64,7 @@ jupyter notebook --no-browser --port=8080
 ssh -L 8080:localhost:8080 <user>@phoenix
 
 ### on client system web browser
-http://localhost:8080/tree?token=/<token/>
+http://localhost:8080/tree?token=< token >
 
 #################################################################################
 #################################################################################
