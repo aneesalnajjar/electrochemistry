@@ -6,9 +6,10 @@ This repository contains developed programmable interfaces for autonomously stee
 We utilized the developed interfaces to develop an [electrochemistry workflow](https://github.com/aneesalnajjar/electrochemistry/blob/main/README.md#electrochemistry-workflow) to test the normality of CV measurements using machine learning.
 
 More details about the cross-facility electrochemistry workflow and ML for electrochemistry workflow are available at:
-**1. A. Al-Najjar, N. S. V. Rao,  C. Bridges and S. Dai, "Cross-Facility Orchestration of Electrochemistry Experiments and Computations", In 2023 5th Annual Workshop on Extreme-scale Experiment-in-the-Loop Computing (XLOOP), Denver, CO, USA, 2023.**
 
-**2. A. Al-Najjar, N. S. V. Rao, C. Bridges, S. Deng, Normality of I-V measurements using ML, IEEE International Conference eScience, 2-pager and poster, October 9-13, Limassol, Cyprus.**
+  **1. A. Al-Najjar, N. S. V. Rao,  C. Bridges and S. Dai, "Cross-Facility Orchestration of Electrochemistry Experiments and Computations", In 2023 5th Annual Workshop on Extreme-scale Experiment-in-the-Loop Computing (XLOOP), Denver, CO, USA, 2023.**
+
+  **2. A. Al-Najjar, N. S. V. Rao, C. Bridges, S. Deng, Normality of I-V measurements using ML, IEEE International Conference eScience, 2-pager and poster, October 9-13, Limassol, Cyprus.**
 
 ## Developer:
 Anees Al-Najjar,
