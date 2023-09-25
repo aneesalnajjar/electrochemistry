@@ -7,7 +7,7 @@
 Products info https://www.jkem.com/, and email1, and email2
 4. Interconnect the electrochemistry workstation instruments into an ecosystem with remote computing system
 
-Note:
+### Note:
     1. The workflow modules can work with 2 and 3, one of them, or a partial set of 3
     2. So far, only the CV technique is available as part of developed autonomous and remote steering modules of electrochemical testing with potentiostat.
 
