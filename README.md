@@ -1,7 +1,7 @@
 
 # Description
 
-This repository contains developed programmable interfaces for autonomously steering an electrochemistry workstation from a remote computing system over an ecosystem. The developed interfaces are Python-based to control Bio-Logic potentiostat and run Cyclic Voltammetry (CV) experiments on a connected electrochemical cell. The interfaces also control a (J-Kem) custom electrochemical setup from a single-board-computer to pump liquid and gas to the cell. These interfaces are run on a control compute agent connected to the potentiostat and J-Kem single-board-computer.
+This repository contains developed programmable interfaces for autonomously steering an electrochemistry workstation from a remote computing system over an ecosystem. The developed interfaces are Python-based to control Bio-Logic potentiostat and run Cyclic Voltammetry (CV) experiments on a connected electrochemical cell. The interfaces also control a (J-Kem) custom setup from a single-board computer to pump liquid and gas to the cell. These interfaces are run on a control compute agent connected to the potentiostat and J-Kem single-board computer.
 
 We utilize the developed Python interfaces in developing electrochemistry workflows, such as the [cross-facility electrochemistry workflow](https://github.com/aneesalnajjar/electrochemistry/blob/main/README.md#electrochemistry-workflow) to test the normality of CV measurements using machine learning.
 
@@ -41,26 +41,24 @@ The repo contains
 Products details are available at https://www.jkem.com/.
 4. Interconnected electrochemistry workstation instruments into an ecosystem with remote computing system.
 
-Note:
-1. The workflow modules can work with 2 and 3, one of them, or a partial set of 3.
-2. So far, only the CV technique is available as part of developed autonomous and remote steering modules of electrochemical testing with potentiostat.
+Note: The workflow modules can work with 2 and 3, one of them, or a partial set of 3.
 
 #################################################################################
 #################################################################################
 
 # Electrochemistry Cross facility Ecosystem.
  
-The Ecosystem consists of an electrochemistry workstation connected to a control agent computer at a science facility, which is interconnected to a remote (high-performance) computing system available at a different facility.
+The Ecosystem consists of an electrochemistry workstation connected to a control agent computer at a science facility, which is interconnected to a remote (high-performance) computing system available at different facility.
 The electrochemistry workstation includes Bio-Logic SP200 potentiostat to control an electrochemical cell, and a J-Kem custom setup of MFC, Fraction collector, Syringe and peristaltic pumps, temperature controller and monitor, polyScience chiller, pH probe, and Electrode Module. The setup is connected via serial ports to the J-Kem single-board computer that runs (back-end) vendor control firmware.
-The electrochemical cell is fed with a solution and gas via the J-Kem setup to run Cyclic Voltammetry (CV) test. 
+The electrochemical cell is fed with a liquid (solution) and gas via the J-Kem setup to run Cyclic Voltammetry (CV) test. 
 The potentiostat and J-Kem single-board computer are controlled via developed Python APIs embedded in the control agent.
 The Python-based APIs at the control agent are wrapped as Pyro server objects to be remotely called across the ecosystem network from the remote computing system to enable cross-facility autonomous instruments steering, and measurement transfer and analysis.
 	
 # Electrochemistry Tesing Workflow
 
 Initially, as a manual step, the workflow requires initializing the experimental setup of the instruments, including filling the fraction collector vials with a solution. 
-Then, the workflow modules are run in server/client mode. The server modules are run at the control agent and the client modules are run from the remote computing.
-The server modules are triggered at the control agent to be run in a daemon to expose the Pyro server objects for communication across the network. They are called by Pyro client applications executed and orchestrated as part of autonomous workflow from a Jupyter notebook at the remote computing system.
+Then, the workflow modules are run in server/client mode. The server modules are run at the control agent while the client modules are run from at the remote computing system.
+The server modules are triggered to be run in a daemon to expose the Pyro server objects for communication across the network. They are called by Pyro client applications executed and orchestrated as part of autonomous workflow from a Jupyter notebook at the remote computing system.
 
 The workflow includes:
   * Activating the J-Kem setup to fill the electrochemical cell.
