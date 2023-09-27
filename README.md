@@ -15,12 +15,18 @@ The repo contains
 <ul>
   <li> 1. Client modules deployed on the remote computing system. They include:</li>
      <ul>
-    <li>1.1 Workflow dependencies for machine learning training samples "training_profiles". The workflow code will also install testing_prfiles and **ml_models_dir** for storing the results and the classifier model. </li>
-    <li>2.2 Second Item Sub Item 2</li>
-    <li>2.3 Second Item Sub Item 3</li>
-    </ul>
-  </li>
-  <li>3 Third Item </li>
+    <li>1.1 Electrochemistry workflow code as a Jupyter notebook </li>
+    <li>1.2 Workflow dependencies for machine learning training samples "training_profiles". The workflow code will also install "testing_prfiles" and "ml_models_dir" for storing the results and the classifier model. </li>
+    <li>1.3 Pyro server objects module </li>
+    <li>1.4 Workflow configurations, including file paths</li>
+    <li>1.5 Biologic SP200 potentiostat configurations</li>
+    <li>1.6 J-Kem setup configurations</li>
+    <li>1.7 Machine Learning models for classifying and predicting i_V profiles</li>
+     </ul>
+  <li> 2. Server modules deployed on the control agent. They include:</li>  
+	<ul>
+	<li>2.1 Main workflow module with Pyro server</li>
+	</ul>
 </ul>
 
 # Prerequitise
