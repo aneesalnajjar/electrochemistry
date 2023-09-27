@@ -3,7 +3,7 @@
 
 This repository contains developed programmable interfaces for autonomously steering an electrochemistry workstation from a remote computing system over an ecosystem. The developed interfaces are Python-based to control Bio-Logic potentiostat and run Cyclic Voltammetry (CV) experiments on a connected electrochemical cell. The interfaces also control a custom electrochemical setup from J-Kem to pump liquid and gas to the cell.
 
-We utilized the developed interfaces to develop an [electrochemistry workflow](https://github.com/aneesalnajjar/electrochemistry/blob/main/README.md#electrochemistry-workflow) to test the normality of CV measurements using machine learning.
+We utilize the developed Python interfaces in developing electrochemistry workflows, such as the [cross-facility electrochemistry workflow](https://github.com/aneesalnajjar/electrochemistry/blob/main/README.md#electrochemistry-workflow) to test the normality of CV measurements using machine learning.
 
 More details about the cross-facility electrochemistry workflow and ML for electrochemistry workflow are available at:
 
@@ -11,6 +11,9 @@ More details about the cross-facility electrochemistry workflow and ML for elect
 
   **2. A. Al-Najjar, N. S. V. Rao, C. Bridges, S. Deng, Normality of I-V measurements using ML, IEEE International Conference eScience, October 9-13, Limassol, Cyprus.**
 
+The repo contains
+1. client modules deployed on the remote computing system. They include:
+   1.1 workflow dependencies for machine learning training samples. The workflow code will also install testing and 
 
 # Prerequitise
 
