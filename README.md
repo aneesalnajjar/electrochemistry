@@ -12,14 +12,10 @@ More details about the cross-facility electrochemistry workflow and ML for elect
   **2. A. Al-Najjar, N. S. V. Rao, C. Bridges, S. Deng, Normality of I-V measurements using ML, IEEE International Conference eScience, October 9-13, Limassol, Cyprus.**
 
 The repo contains
-1. client modules deployed on the remote computing system. They include:
-1.1 workflow dependencies for machine learning training samples. The workflow code will also install testing and
-
 <ul>
-  <li>1. First Item</li>
-  <li>2. Second Item
-    <ul>
-    <li>2.1 Second Item Sub Item 1 </li>
+  <li> 1. Client modules deployed on the remote computing system. They include:</li>
+     <ul>
+    <li>1.1 Workflow dependencies for machine learning training samples. The workflow code will also install testing_prfiles and ml_profiles for storing the results and the classifier model. </li>
     <li>2.2 Second Item Sub Item 2</li>
     <li>2.3 Second Item Sub Item 3</li>
     </ul>
