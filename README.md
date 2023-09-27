@@ -36,9 +36,9 @@ The repo contains
 # Prerequitise
 
 1. Anaconda installed on the remote computing systems and control agent.
-2. EC-Lab Development Package for Bio-Logic SP200 potentiostat firmware installed on C drive of the control agent. Product info https://www.biologic.net/products/sp-200/
+2. EC-Lab Development Package for Bio-Logic SP200 potentiostat firmware installed on C drive of the control agent. Product info is available at https://www.biologic.net/products/sp-200/
 3. J-Kem single-board (back-end) hardware and firmware connected to the J-Kem setup. J-Kem setup of instruments includes MFC, Fraction collector, Syringe and peristaltic pumps, temperature controller and monitor, polyScience chiller, pH probe, and Electrode Module.
-Products info https://www.jkem.com/, and email1, and email2
+Products details are available at https://www.jkem.com/.
 4. Interconnect the electrochemistry workstation instruments into an ecosystem with remote computing system
 
 Note:
