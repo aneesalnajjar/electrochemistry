@@ -1,9 +1,7 @@
 Description
 
 This repository contains developed programmable interfaces for autonomously steering an electrochemistry workstation from a remote computing system over an ecosystem. The developed interfaces are Python-based to control Bio-Logic potentiostat and run Cyclic Voltammetry (CV) experiments on a connected electrochemical cell. The interfaces also control a (J-Kem) custom setup from a single-board computer to pump liquid and gas to the cell. These interfaces are run on a control compute agent connected to the potentiostat and J-Kem single-board computer.
-
 We utilize the developed Python interfaces in developing electrochemistry workflows, such as the cross-facility electrochemistry workflow to test the normality of CV measurements using machine learning.
-
 More details about the cross-facility electrochemistry workflow and ML for electrochemistry workflow are available at:
 
 1. A. Al-Najjar, N. S. V. Rao, C. Bridges, and S. Dai, "Cross-Facility Orchestration of Electrochemistry Experiments and Computations", In 2023 5th Annual Workshop on Extreme-scale Experiment-in-the-Loop Computing (XLOOP), Denver, CO, USA, 2023.
@@ -26,6 +24,7 @@ The repo contains
 3. Python package requirements under Windows and Ubuntu Linux systems:
 
 Prerequitise
+
 Anaconda installed on the remote computing systems and control agent.
 EC-Lab Development Package for Bio-Logic SP200 potentiostat firmware installed on C drive of the control agent. Product info is available at https://www.biologic.net/products/sp-200/
 J-Kem single-board (back-end) hardware and firmware connected to the J-Kem setup. J-Kem setup of instruments includes MFC, Fraction collector, Syringe and peristaltic pumps, temperature controller and monitor, polyScience chiller, pH probe, and Electrode Module. Products details are available at https://www.jkem.com/.
@@ -35,9 +34,11 @@ Note: The workflow modules can work with 2 and 3, one of them, or a partial set 
 ################################################################################# #################################################################################
 
 Electrochemistry Cross facility Ecosystem.
+
 The Ecosystem consists of an electrochemistry workstation connected to a control agent computer at a science facility, which is interconnected to a remote (high-performance) computing system available at different facility. The electrochemistry workstation includes Bio-Logic SP200 potentiostat to control an electrochemical cell, and a J-Kem custom setup of MFC, Fraction collector, Syringe and peristaltic pumps, temperature controller and monitor, polyScience chiller, pH probe, and Electrode Module. The setup is connected via serial ports to the J-Kem single-board computer that runs (back-end) vendor control firmware. The electrochemical cell is fed with a liquid (solution) and gas via the J-Kem setup to run Cyclic Voltammetry (CV) test. The potentiostat and J-Kem single-board computer are controlled via developed Python APIs embedded in the control agent. The Python-based APIs at the control agent are wrapped as Pyro server objects to be remotely called across the ecosystem network from the remote computing system to enable cross-facility autonomous instruments steering, and measurement transfer and analysis.
 
 Electrochemistry Tesing Workflow
+
 Initially, as a manual step, the workflow requires initializing the experimental setup of the instruments, including filling the fraction collector vials with a solution. Then, the workflow modules are run in server/client mode. The server modules are run at the control agent while the client modules are run from at the remote computing system. The server modules are triggered to be run in a daemon to expose the Pyro server objects for communication across the network. They are called by Pyro client applications executed and orchestrated as part of autonomous workflow from a Jupyter notebook at the remote computing system.
 
 The workflow includes:
