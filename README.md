@@ -26,7 +26,11 @@ The repo contains
   <li> 2. Server modules deployed on the control agent. They include:</li>  
 	<ul>
 	<li>2.1 Main workflow module with Pyro server</li>
+        <li>2.2 Helpers module having some assisting methods</li>
+        <li>2.3 Developed J-Kem API related to different electrochemistry instruments</li>
+	<li>2.1 Developed SP200 API based on Bio-Logic development package Python API</li>	
 	</ul>
+   <li> 3. Python package requirements under Windows and Ubuntu Linux systems:</li>  
 </ul>
 
 # Prerequitise
