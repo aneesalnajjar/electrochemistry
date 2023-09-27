@@ -15,7 +15,7 @@ The repo contains
 <ul>
   <li> 1. Client modules deployed on the remote computing system. They include:</li>
      <ul>
-    <li>1.1 Workflow dependencies for machine learning training samples ( **training_profiles** ). The workflow code will also install **testing_prfiles** and ***ml_models_dir* for storing the results and the classifier model. </li>
+    <li>1.1 Workflow dependencies for machine learning training samples (**training** _profiles). The workflow code will also install testing_prfiles and **ml_models_dir** for storing the results and the classifier model. </li>
     <li>2.2 Second Item Sub Item 2</li>
     <li>2.3 Second Item Sub Item 3</li>
     </ul>
