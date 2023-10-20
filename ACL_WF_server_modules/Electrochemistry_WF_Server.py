@@ -16,8 +16,8 @@ sys.path.insert(0, mypath)
 from kbio.c_utils import c_is_64b
 from kbio.tech_types import TECH_ID
 
-ipAddressServer = '10.2.11.161'
-connectionPort = '9090'
+ipAddressServer = '0.0.0.0'
+connectionPort = '0000'
 
 
 @Pyro4.expose
